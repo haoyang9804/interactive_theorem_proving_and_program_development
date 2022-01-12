@@ -327,9 +327,12 @@ Proof.
   trivial.
 Qed.
 
+
+
 Theorem regroup : forall x : Z, x + x + x + x + x = 5*x.
 Proof.
-  intro x. pattern x at 1.
+  intro x.
+  pattern x at 1.
   rewrite <- Zmult_1_l.
   repeat rewrite Zmult_distr_1.
   auto with zarith.
