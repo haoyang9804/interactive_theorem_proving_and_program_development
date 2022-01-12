@@ -74,7 +74,7 @@ Proof.
   unfold lt. apply le_n.
 Qed.
 
-Search Zle.
+(* Search Zle. *)
 
 SearchPattern (_ + _ <= _)%Z.
 SearchPattern (?X1 * _ <= ?X1 * _)%Z.
